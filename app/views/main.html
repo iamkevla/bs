@@ -1,0 +1,171 @@
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container hero-unit">
+    <h1>G'day!</h1>
+    <p class="lead">Twitter Bootstrap components executed as AngularJs Directives to provide a rich new DSL (Domain Specific Language). The aim here is to demonstrate the power and the simplicity of Angular Directives.</p>
+  </div>
+</header>
+
+
+<div class="container">
+
+<!-- Docs nav
+================================================== -->
+<div class="row">
+
+  <div class="span10">
+
+   	<!-- Dropdowns
+    ================================================== -->
+    <section id="dropdowns">
+      <div class="page-header">
+        <h1>Dropdown menus</h1>
+      </div>
+
+      <h2>Example</h2>
+      <p>Toggleable, contextual menu for displaying lists of links.</p>
+      <div class="bs-docs-example" >
+         <bs-dropdown-menu menu-items="model.menuItems" trigger="Dropdown Trigger"  ></bs-dropdown-menu>
+      </div>
+
+<pre class="prettyprint linenums">
+    model.menuItems = [
+        { menuItem: "Action", href:"#" },
+        { menuItem: "Another action", href:"#" },
+        { menuItem: "Something else here", href:"http:www.krackas.com" },
+        { type: "divider"},
+        { menuItem: "Separated link", href:"#" }
+      ];
+</pre>
+
+<pre class="prettyprint linenums">
+&lt;bs-dropdown-menu menu-items="model.menuItems" trigger="Dropdown Trigger" /&gt;
+</pre>
+
+
+    </section>
+
+    <!-- Button Groups
+        ================================================== -->
+        <section id="buttonGroups">
+          <div class="page-header">
+            <h1>Button groups</h1>
+          </div>
+
+          <h2>Examples</h2>
+          <p>Two basic options, along with two more specific variations.</p>
+
+          <h3>Single button group</h3>
+          <p>Wrap a series of buttons with <code>bs-btn</code> in <code>bs-btn-group</code>.</p>
+          <div class="bs-docs-example">
+            <bs-btn-group style="margin: 9px 0 5px;" >
+              <bs-btn>Left</bs-btn>
+              <bs-btn>Middle</bs-btn>
+              <bs-btn>Right</bs-btn>
+            </bs-btn-group>
+          </div>
+<pre class="prettyprint linenums">
+&lt;bs-btn-group&gt;
+  &lt;bs-btn&gt;Left&lt;/bs-btn&gt;
+  &lt;bs-btn&gt;Middle&lt;/bs-btn&gt;
+  &lt;bs-btn&gt;Right&lt;/bs-btn&gt;
+&lt;/bs-btn-group&gt;
+</pre>
+
+          <h3>Multiple button groups</h3>
+          <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
+          <div class="bs-docs-example">
+            <bs-btn-toolbar style="margin: 0;">
+              <bs-btn-group>
+                <bs-btn>1</bs-btn>
+                <bs-btn>2</bs-btn>
+                <bs-btn>3</bs-btn>
+                <bs-btn>4</bs-btn>
+              </bs-btn-group>
+              <bs-btn-group>
+                <bs-btn>5</bs-btn>
+                <bs-btn>6</bs-btn>
+                <bs-btn>7</bs-btn>
+              </bs-btn-group>
+              <bs-btn-group>
+                <bs-btn>8</bs-btn>
+              </bs-btn-group>
+            </bs-btn-toolbar>
+          </div>
+<pre class="prettyprint linenums">
+&lt;bs-btn-toolbar&gt;
+  &lt;bs-btn-group&gt;
+    ...
+  &lt;/bs-btn-group&gt;
+&lt;/bs-btn-toolbar&gt;
+</pre>
+
+          <h3>Vertical button groups</h3>
+          <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+          <div class="bs-docs-example">
+            <bs-btn-group btn-group-vertical>
+              <bs-btn><i class="icon-align-left"></i></bs-btn>
+              <bs-btn><i class="icon-align-center"></i></bs-btn>
+              <bs-btn><i class="icon-align-right"></i></bs-btn>
+              <bs-btn><i class="icon-align-justify"></i></bs-btn>
+            </bs-btn-group>
+          </div>
+<pre class="prettyprint linenums">
+&lt;bs-btn-group btn-group-vertical&gt;
+  ...
+&lt;/bs-btn-group&gt;
+</pre>
+
+
+        </section>        
+
+
+    <!-- Progress bars
+    ================================================== -->
+    <section id="progress">
+      <div class="page-header">
+        <h1>Progress bars <small>For loading, redirecting, or action status</small></h1>
+      </div>
+
+      <h2>Examples and markup</h2>
+
+      <h3>Basic</h3>
+      <p>Default progress bar with a vertical gradient.</p>
+      <div class="bs-docs-example">
+         <bs-progress value="{{model.progressMeter}}" />
+      </div>
+
+
+<pre class="prettyprint linenums">
+&lt;bs-progress value="{{model.progressMeter}}"  /&gt;
+</pre>
+
+      <h3>Striped</h3>
+      <p>Uses a gradient to create a striped effect. Not available in IE7-8.</p>
+      <div class="bs-docs-example">
+        <bs-progress value="{{model.progressMeter}}" progress-striped ></bs-progress>
+      </div>
+<pre class="prettyprint linenums">
+&lt;bs-progress value={{model.progressMeter}} progress-striped /&gt;
+</pre>
+
+      <h3>Animated</h3>
+      <p>Add <code>active</code> to <code>progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.</p>
+      <div class="bs-docs-example">
+        <bs-progress value="{{model.progressMeter}}" progress-striped active ></bs-progress>
+      </div>
+<pre class="prettyprint linenums">
+&lt;bs-progress value={{model.progressMeter}} progress-striped active /&gt;
+</pre>
+
+    </section>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
